@@ -6,39 +6,39 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get -f -y install \
-        git \
-        build-essential \
-        diffstat \
-        texinfo \
-        gawk \
-        chrpath \
-        socat \
-        doxygen \
-        dos2unix \
-        python3 \
         bison \
-        flex \
-        libssl-dev \
-        u-boot-tools \
-        mono-devel \
-        mono-complete \
-        curl \
-        python3-distutils \
-        repo \
-        pseudo \
-        python3-sphinx \
-        g++-multilib \
-        libc6-dev-i386 \
-        jq \
-        git-lfs \
-        pigz \
-        zstd \
-        liblz4-tool \
+        build-essential \
+        chrpath \
         cpio \
+        curl \
+        diffstat \
+        dos2unix \
+        doxygen \
         file \
-        zstd \
+        flex \
+        g++-multilib \
+        gawk \
+        git \
+        git-lfs \
+        jq \
+        libc6-dev-i386 \
+        liblz4-tool \
+        libssl-dev \
         lz4 \
-        wget
+        mono-complete \
+        mono-devel \
+        pigz \
+        pseudo \
+        python3 \
+        python3-distutils \
+        python3-sphinx \
+        repo \
+        socat \
+        texinfo \
+        tmux \
+        u-boot-tools \
+        wget \
+        zstd
 
 RUN dpkg-reconfigure dash
 
