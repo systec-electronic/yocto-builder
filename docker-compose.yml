@@ -1,11 +1,10 @@
 ---
-version: '2'
+version: "2"
 services:
-  yocto:
+  yocto-builder:
     build:
       context: .
       dockerfile: Dockerfile
     image: 132335/yocto-builder
     volumes:
       - ./shared:/home/build/shared
-      - ~/.netrc:/home/build/.netrc:ro
