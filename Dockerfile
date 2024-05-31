@@ -34,6 +34,7 @@ RUN apt-get update && \
         python3-sphinx \
         repo \
         socat \
+        sudo \
         texinfo \
         tmux \
         u-boot-tools \
